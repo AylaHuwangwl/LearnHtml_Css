@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        .red{
+            color:red
+        }
+        /*
+        交集选择器
+        */
+        div.red{
+            font-size:50px;
+        }
+        p.red{
+            color:pink;
+        }
+        .a.b.c{
+            color:rgb(133, 194, 21)
+        }
+        /*
+        并集选择器（选择器分组）
+        */
+        div,p{
+            font:inherit
+        }
+    </style>
+</head>
+<body>
+    <div class="red">我是div,我应该是红色的</div>
+    <p class="red">我是P，我应该是红色的</p>
+    <div class="a b c">我是div2</div>
+</body>
+</html>

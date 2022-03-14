@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图练习</title>
+    <link rel="stylesheet" href="./CSS样式重置/reset.css">
+    <style>
+        body{
+            background-color:#bfa;
+        }
+        .img{
+            width:590px;
+            height: 470px;
+            margin:50px 100px;
+            position: relative;
+        }
+       .img li{
+            position: absolute;
+        }
+        .point{
+             position: absolute; 
+            display:block;
+            z-index: 9999;
+            margin: 0 20px;
+            left: 3px;
+            bottom: 20px;
+            /* width:2px;
+            height: 20px; */
+            
+        }
+        .img li:nth-child(6){
+            z-index:1 ;
+        }
+        .img a.active,
+        .img a:hover{
+            background-color: #fff;
+            border: 2px solid  rgba(255, 255, 255, .3);
+        }
+        .point a{
+             /* 设置元素向左浮动 */
+             float: left;
+            width: 10px;
+            height: 10px;
+            margin: 0px 2px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, .3);
+            /* 将背景颜色值设置到内容区，边框和内边距不在有背景颜色 */
+            background-clip: content-box;
+            border: 2px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <ul class="img">
+        <li><a href="javascipt:;"><img src="../exercise/img/京东轮播图练习/1.jpg" ></a></li>
+        <li><a href="javascipt:;"><img src="../exercise/img/京东轮播图练习/2.jpg" ></a></li>
+        <li><a href="javascipt:;"><img src="../exercise/img/京东轮播图练习/3.jpg" ></a></li>
+        <li><a href="javascipt:;"><img src="../exercise/img/京东轮播图练习/4.jpg" ></a></li>
+        <li><a href="javascipt:;"><img src="../exercise/img/京东轮播图练习/5.jpg" ></a></li>
+        <li><a href="javascipt:;"><img src="../exercise/img/京东轮播图练习/6.jpg" ></a></li>
+        <li><a href="javascipt:;"><img src="../exercise/img/京东轮播图练习/7.jpg" ></a></li>
+        <li><a href="javascipt:;"><img src="../exercise/img/京东轮播图练习/8.jpg" ></a></li>    
+        <div class="point">
+        <a href="javascript:;" class="active"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+    </ul>
+</body>
+</html>

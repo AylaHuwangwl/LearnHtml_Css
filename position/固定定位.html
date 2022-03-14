@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        body{
+            font-size: 40px;
+            height:2000px
+        }
+        .box1 {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(48, 17, 77);
+            /* position: absolute; */
+            /* left: 0px;
+            top: 0px; */
+            float:left;
+        }
+
+         /*
+                固定定位：
+                    - 将元素的position属性设置为fixed则开启了元素的固定定位
+                    - 固定定位也是一种绝对定位，所以固定定位的大部分特点都和绝对定位一样
+                        唯一不同的是固定定位永远参照于浏览器的视口进行定位
+                        固定定位的元素不会随网页的滚动条滚动
+
+              */
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(30, 148, 119);
+            position:sticky;
+            top: 100px;
+            left: 100px;
+
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(133, 30, 64);
+            float:left;
+            clear:both;
+            /* position: absolute;
+            top: 0px;
+            left: 0px; */
+        }
+        .clearfix::after,.clearfix::before{
+            content:"";
+            display:block;
+            clear:both;
+        }
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(107, 179, 14);
+            /* position: absolute; */
+            margin-top: 30px;
+            /* top: 0px;
+            left: 0px; */
+        }
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(44, 38, 134);
+            /* margin-top: 20px; */
+            position: fixed;
+           top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">1
+        <div class="box2">2
+            <div class="box4">3
+                <div class="box5">4</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box3">5</div>
+</body>
+
+</html>

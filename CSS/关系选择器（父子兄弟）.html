@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            为div的子元素span设置一个字体颜色红色
+            （为div直接包含的span设置一个字体颜色）
+
+            子元素选择器
+                作用：选中指定父元素的指定子元素
+                语法：父元素 > 子元素
+        
+            将div的子元素span设置为红色
+        */
+      /* div.blue > span{
+          color:rgb(55, 98, 155)
+      }   */
+
+
+      /* 
+            后代元素选择器：
+                作用：选中指定元素内的指定后代元素
+                语法：祖先 后代
+         */
+         /* div.green span{
+             color:lime
+         } */
+
+         /* 
+            选择下一个兄弟
+                语法：前一个 + 下一个
+            选择下边所有的兄弟
+                语法：兄 ~ 弟
+          */
+
+          p + span{
+              color: red;
+          }
+
+
+          p ~ p{
+              color: rgb(81, 20, 131);
+          }
+    </style>
+</head>
+<body>
+    <!--
+        父元素：直接包含子元素的元素叫父元素
+        子元素：直接包含父元素的元素叫父元素
+        祖先元素：
+        后代元素：
+        兄弟元素：
+    -->
+    <div class="green">
+        我是一个div
+        <p>
+            我是div中的p元素
+            <span>我是P元素中的span元素</span>
+        </p>
+        <p>我也是div中的P元素2</p>
+        <span>
+            我是div中的span元素
+        </span>
+    </div>
+    <div class="blue">
+        我是一个div2
+        <span>
+            我是div2中的span
+        </span>
+    </div>
+</body>
+</html>

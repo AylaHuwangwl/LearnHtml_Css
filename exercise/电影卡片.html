@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影卡片</title>
+    <link rel="stylesheet" href="../position/CSS样式重置/reset.css">
+    <link rel="stylesheet" href="../exercise/font awesare/css/all.css">
+    <style>
+       .box{
+           width: 240px;
+           /* 不能设置高度，高度被内容撑开 */
+           margin: 50px auto;
+           box-shadow: 0 0 10px rgba(0,0,0,0.3);
+       } 
+       .img{
+           width: 100%;
+           /* border:1px red solid */
+           vertical-align: bottom;
+       }
+       .content{
+           margin:0px 18px;
+           color:#B3B3B3;
+           font-size: 14px;
+       }
+       .content .title{
+           margin: 13px 0;
+           color:#8B8B8B;
+           font-size: 18px;
+       }
+       .content .title2 i{
+           margin-left: 4px;
+           margin-right: 7px;
+       }
+       /* .content .title2{
+           margin-bottom: 25px;
+       } */
+       .content .desc{
+           margin: 18px 4px;
+           line-height: 20px;
+       }
+       .wrapper{
+            height: 46px;
+            line-height: 46px;
+            border-top: 1px solid #e9e9e9;
+            color: #ddd;
+            padding: 0 16px;
+        }
+       .wrapper .star li{
+           float:left;
+       }
+       .wrapper .star .light{
+           color:#B4C539;
+       }
+       .wrapper .weibo{
+           float: right;
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="img">
+            <img src="./img/电影卡片/1.jpg">
+        </div>
+
+        <div class="content">
+            <h2 class="title">动画电影</h2>
+            <h3 class="title2"> <i class="fas fa-map-marker-alt"></i>动画</h3>
+            <p class="desc">我是一部动画电影，来自迪士尼制作团队，很好很好看，我有美丽金黄的长发，可爱的海水淡化技术等级</p>
+        </div>
+
+        <div class="wrapper">
+            <ul class="star">
+                <li><i class="fas fa-star light"></i></li>
+                <li><i class="fas fa-star light"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+            </ul>
+            <ul class="weibo"><i class="fab fa-weibo"></i></ul>
+        </div>
+    </div>
+</body>
+
+</html>

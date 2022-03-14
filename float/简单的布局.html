@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>简单的布局</title>
+    <style>
+        header,main,footer{
+            width:1200px;
+        }
+        header{
+            height:120px;
+            background-color: blueviolet;
+        }
+        main{
+            height:600px;
+            background-color: rgb(31, 129, 168);
+        }
+        .nav,.article,.nav2{
+            height:100%;
+            float:left
+        }
+        .nav{
+            width:280px;
+            background-color: rgb(134, 95, 160);
+        }
+        .article{
+            width:600px;
+            background-color: chocolate;
+            margin:0 20px
+        }
+        .article>.top{
+            width:580;
+            height:180px;
+            margin: 10px;
+            background-color: cornsilk;
+        }
+        .article>.bottom{
+            width:580;
+            height:380px;
+            margin: 10px;
+            background-color: rgb(143, 120, 30);
+        }
+        .nav2{
+            width:280px;
+            background-color: rgb(45, 88, 129);
+        }
+        footer{
+            height:120px;
+            background-color: rgb(101, 197, 23);
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="nav"></div>
+        <div class="article">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+        <div class="nav2"></div>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        .box1{
+            width: 800px;
+            height: 800px;
+            background-color: steelblue;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            animation: 2s 1s;
+            animation-name: test;
+            /* 执行次数 */
+            animation-iteration-count: infinite;
+            /* 动画执行方向 */
+            animation-direction:alternate;
+            /* 设置动画执行状态 */
+            /* animation-play-state: paused; */
+        }
+        .box2:hover{
+            animation-play-state: paused;
+        }
+        @keyframes test{
+            form{
+                margin-left: 0;
+            }
+            to{
+                margin-left: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"><div class="box2"></div></div>
+</body>
+</html>

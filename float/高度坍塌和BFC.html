@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            border:10px #ff0000 solid;
+            /* BFC开启的三种方式：
+                float:left(设置float)
+                display:inline-block(设置display)      
+                overflow:hidden/auto(设置overflow)     
+             */
+            /* float:left; */
+            /* display: inline-block; */
+            /* 设置BFC：块级格式化环境 */
+            overflow: hidden;
+        }
+        .inter{
+            width:100px;
+            height:100px;
+            background-color: #bfa;
+            float: left;
+        }
+        .aa{
+            width:100px;
+            height:100px;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inter"></div>
+    </div>
+    <div class="aa"></div>
+</body>
+</html>

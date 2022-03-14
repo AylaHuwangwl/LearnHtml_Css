@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆界面</title>
+    <style>
+        body {
+            font-size: 9px;
+        }
+
+        .login {
+            width: 250px;
+            height: 150px;
+            border: 2px solid #8CCC9D;
+            box-shadow: 0 0 10px rgba(125, 248, 158, 0.8);
+            border-radius: 10px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .tel,
+        .password {
+            position: absolute;
+            padding: 10px;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+
+        label {
+            margin-right: 15px;
+        }
+
+        .sub,
+        .reset {
+            margin-top: 12px;
+            height: 28px;
+            font-size: 4px;
+            text-align: center;
+        }
+
+        input {
+            border: 1px solid #d8d5d5;
+        }
+
+        .sub {
+            padding: 0;
+            color: white;
+            background-color: #009688;
+            border: 2px solid #00897A;
+            margin-left: 54px;
+            margin-right: 9px;
+            width: 58px;
+
+        }
+
+        .reset {
+            border: 2px solid #E1E1E1;
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <form action="server.html">
+        <div class="tel">
+            <label for="telno">手机号</label><input type="text" name="telno" size="13px" placeholder="请输入手机号">
+        </div>
+        <br><br>
+        <div class="password">
+            <label for="password">密码号</label><input type="password" name="pw" size="13px" placeholder="请输入密码">
+            <button type="submit" class="sub">立即提交</button>
+            <button type="reset" class="reset">重置</button>
+        </div>
+    </form>
+    </div>
+
+</body>
+
+</html>

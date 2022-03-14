@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒</title>
+    <style>
+        ul{
+            width: 200px;
+            /* height: 200px; */
+            border:10px solid red;
+            /* float: left; */
+            display:flex;
+            flex-direction: column;
+            list-style: none;
+            font-size: 40px;
+        }
+
+        .c3{
+            width: 100px;
+            height: 500px;
+            background-color: coral;
+            flex-grow: 2;
+        }
+        .c1{
+            width:100px;
+            height: 200px;
+            background-color: brown;
+            flex-grow: 4;
+        }
+        .c2{
+            width:100px;
+            height: 100px;
+            background-color: cadetblue;
+            flex-grow: 6;
+        }
+    </style>
+</head>
+<body>
+    <ul class="flexbox">
+        <li class="c1">1</li>
+        <li class="c2">2</li>
+        <li class="c3">3</li>
+    </ul>
+</body>
+</html>
